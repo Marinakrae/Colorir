@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 1654
-  Top = 296
+  Left = 542
+  Top = 223
   Width = 691
   Height = 404
   Align = alCustom
@@ -29,12 +29,6 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    object Imagem: TImage
-      Left = 112
-      Top = 200
-      Width = 105
-      Height = 105
-    end
     object Desenho: TImage
       Left = 320
       Top = 56
@@ -67,15 +61,6 @@ object Form1: TForm1
         'FF2F7E'
         'FFFB00'
         'FF6565')
-    end
-    object btnDesenha: TButton
-      Left = 120
-      Top = 312
-      Width = 75
-      Height = 25
-      Caption = 'Desenha'
-      TabOrder = 2
-      OnClick = btnDesenhaClick
     end
   end
 end

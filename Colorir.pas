@@ -11,11 +11,8 @@ type
     Panel1: TPanel;
     MediaPlayer1: TMediaPlayer;
     Cores: TsColorsPanel;
-    Imagem: TImage;
-    btnDesenha: TButton;
     Desenho: TImage;
     procedure CoresClick(Sender: TObject);
-    procedure btnDesenhaClick(Sender: TObject);
     procedure FormPaint(Sender: TObject);
   private
     { Private declarations }
@@ -35,35 +32,49 @@ begin
   with Desenho do
   begin
     Canvas.Brush.Color := Cores.ColorValue;
-  end;
-end;
-
-procedure TForm1.btnDesenhaClick(Sender: TObject);
-begin
-  with Imagem do
-  begin
-    Canvas.Pen.Color := clFuchsia;
-    Canvas.Pen.Width := 1;
-    Canvas.Pen.Style := psDash;
-    Canvas.MoveTo(0,0);
-    Canvas.LineTo(150, 150);
+    FormPaint(Desenho);
   end;
 end;
 
 procedure TForm1.FormPaint(Sender: TObject);
+var
+    i, x, y, xx, yy: Integer;
+    p: array[0..9] of TPoint;
+    t, r, sv, sw, sx, sy, s: Real;
+    Rect: TRect;
+    FRegion: HRGN;
 begin
-  {Desenhando o urso}
-  with Desenho do
+  {Desenhando a estrela}
+  With Desenho do
   begin
+    Rect := ClientRect;
+    InflateRect(Rect, -2, -2); //decreases rectangle size by 2//
+    sx := (Rect.Right-Rect.Left)*0.48;
+    sy := (Rect.Bottom-Rect.Top)*0.5;
+    if sx > sy then
+      sx := sy
+    else
+      sy := sx;
+    sv := (Rect.Left + Rect.Right) / 2;
+    sw := (Rect.Top + Rect.Bottom * 1.2) / 2.2;
+    for i := 0 to 10 do
+    begin
+      if ((i and 1) <> 0) then
+        r := 1
+      else
+        r := 0.384;
+      t := i * 2 * (PI/10);
+      P[i].x := Trunc(sv+sx*r*sin(t));
+      P[i].Y := Trunc(sw+sy*r*cos(t));
+    end;
+    FRegion := CreatePolygonRgn(P, 10, WINDING);
+
     Canvas.Pen.Color := clBlack;
     Canvas.Pen.Width := 2;
-    Canvas.Ellipse(0, 0, 150, 100);
-    Canvas.Ellipse(200, 200, 50, 50);
+    Canvas.Brush.Color := Cores.ColorValue;
+    Canvas.Brush.Style := bsSolid;
 
-    Canvas.Arc(60, 60, 110, 110, 120, 120, 10, 10);
-    Canvas.Pen.Color := clGreen;
-    Canvas.Arc(70, 70, 150, 150, 150, 150, 70, 70 );
-
+    Canvas.Polygon(P);
   end;
 end;
 
