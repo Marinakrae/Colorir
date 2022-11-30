@@ -40,7 +40,6 @@ object Form1: TForm1
       Top = 0
       Width = 253
       Height = 30
-      Visible = False
       TabOrder = 0
     end
     object Cores: TsColorsPanel
