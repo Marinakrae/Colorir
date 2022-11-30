@@ -1,4 +1,4 @@
 # Colorir
-Jogo simples de colorir utilizando o Delphi VLC
+Modo de jogar: Execute o arquivo Colorir_.exe
 
-Código do desenho da estrela de: http://delphiprogrammingdiary.blogspot.com/2019/03/drawing-shapes-in-delphi.html
+Código da estrela de: http://delphiprogrammingdiary.blogspot.com/2019/03/drawing-shapes-in-delphi.html
