@@ -105,10 +105,6 @@ HostApplication=
 Launcher=
 UseLauncher=0
 DebugCWD=
-[Language]
-ActiveLang=
-ProjectLang=$00000416
-RootDir=C:\Program Files (x86)\Borland\Delphi7\Bin\
 [Version Info]
 IncludeVerInfo=0
 AutoIncBuild=0
@@ -147,3 +143,12 @@ c:\program files (x86)\borland\delphi7\Projects\Bpl\Package1.bpl=(untitled)
 C:\Program Files (x86)\Borland\Delphi7\LibCDESP_vDev\pkvSIGAnalysis7.bpl=Business - SIG Analysis Visual
 C:\Program Files (x86)\Borland\Delphi7\LibTerceiros\GMLib_D7.bpl=GoogleMaps Library v1.5.3 (Copyright © Xavier Martínez - cadetill)
 C:\Program Files (x86)\Borland\Delphi7\LibTerceiros\zexmlsslibD7.bpl=ZEXMLSS component
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlUnitOutputDirectory]
+Count=1
+Item0=C:\Users\marina.eskelsen\Desktop\delphi\Morango
+[HistoryLists\hlOutputDirectorry]
+Count=1
+Item0=C:\Users\marina.eskelsen\Desktop\delphi\Morango

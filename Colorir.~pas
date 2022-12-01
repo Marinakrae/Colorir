@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, sPanel, StdCtrls, MPlayer, ExtCtrls;
+  Dialogs, sPanel, StdCtrls, MPlayer, pngimage, ExtCtrls, ShellAPI;
 
 type
   TForm1 = class(TForm)
@@ -12,6 +12,9 @@ type
     MediaPlayer1: TMediaPlayer;
     Cores: TsColorsPanel;
     Desenho: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
     procedure CoresClick(Sender: TObject);
     procedure FormPaint(Sender: TObject);
   private
@@ -43,6 +46,7 @@ var
     t, r, sv, sw, sx, sy, s: Real;
     Rect: TRect;
     FRegion: HRGN;
+    CaminhoMp3: string;
 begin
   {Desenhando a estrela}
   With Desenho do
@@ -79,12 +83,12 @@ begin
 
   {Tocando a música}
   MediaPlayer1 := TMediaPlayer.Create(Self);
+  CaminhoMp3 := GetCurrentDir + '\musica.wav';
   MediaPlayer1.Parent := Self;
-  CaminhoMp3:= GetCurrentDir + '\musica.wav';
   MediaPlayer1.FileName := CaminhoMp3;
-  MediaPlayer1.Open;
-  MediaPlayer1.AutoRewind := True;
-  MediaPlayer1.Play;
+//  MediaPlayer1.Open;
+//  MediaPlayer1.AutoRewind := True;
+//  MediaPlayer1.Play;
 end;
 
 end.

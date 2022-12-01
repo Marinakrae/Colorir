@@ -1,5 +1,5 @@
 object Form1: TForm1
-  Left = 542
+  Left = 452
   Top = 223
   Width = 691
   Height = 404
@@ -35,16 +35,57 @@ object Form1: TForm1
       Width = 265
       Height = 257
     end
+    object Label1: TLabel
+      Left = 88
+      Top = 56
+      Width = 114
+      Height = 20
+      Caption = 'Colorir a estrela!'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clFuchsia
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 426
+      Top = 184
+      Width = 55
+      Height = 13
+      Caption = 'O             O'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clDefault
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 448
+      Top = 206
+      Width = 9
+      Height = 20
+      Caption = 'u'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+    end
     object MediaPlayer1: TMediaPlayer
-      Left = 0
-      Top = 0
+      Left = 40
+      Top = 283
       Width = 253
       Height = 30
+      Enabled = False
+      Visible = False
       TabOrder = 0
     end
     object Cores: TsColorsPanel
-      Left = 88
-      Top = 112
+      Left = 77
+      Top = 86
       Caption = ' '
       DoubleBuffered = False
       TabOrder = 1
