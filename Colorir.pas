@@ -13,8 +13,6 @@ type
     Cores: TsColorsPanel;
     Desenho: TImage;
     Label1: TLabel;
-    Label2: TLabel;
-    Label3: TLabel;
     procedure CoresClick(Sender: TObject);
     procedure FormPaint(Sender: TObject);
   private

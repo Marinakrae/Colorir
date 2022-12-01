@@ -82,13 +82,13 @@ begin
   end;
 
   {Tocando a música}
-  MediaPlayer1 := TMediaPlayer.Create(Self);
-  CaminhoMp3 := GetCurrentDir + '\musica.wav';
-  MediaPlayer1.Parent := Self;
-  MediaPlayer1.FileName := CaminhoMp3;
-//  MediaPlayer1.Open;
-//  MediaPlayer1.AutoRewind := True;
-//  MediaPlayer1.Play;
+//  MediaPlayer1 := TMediaPlayer.Create(Self);
+//  CaminhoMp3 := GetCurrentDir + '\musica.wav';
+//  MediaPlayer1.Parent := Self;
+//  MediaPlayer1.FileName := CaminhoMp3;
+////  MediaPlayer1.Open;
+////  MediaPlayer1.AutoRewind := True;
+////  MediaPlayer1.Play;
 end;
 
 end.

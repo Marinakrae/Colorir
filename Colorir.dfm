@@ -48,32 +48,6 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
     end
-    object Label2: TLabel
-      Left = 426
-      Top = 184
-      Width = 55
-      Height = 13
-      Caption = 'O             O'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clDefault
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
-      ParentFont = False
-    end
-    object Label3: TLabel
-      Left = 448
-      Top = 206
-      Width = 9
-      Height = 20
-      Caption = 'u'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -16
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
-      ParentFont = False
-    end
     object MediaPlayer1: TMediaPlayer
       Left = 40
       Top = 283
